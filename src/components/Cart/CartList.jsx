@@ -9,7 +9,7 @@ function CartList() {
   );
 
   return (
-    <div className="fixed right-0 top-16 w-80 bg-white shadow-lg p-4 border overflow-auto max-h-[70vh]">
+    <div  className="fixed right-0 top-26 w-80 bg-white shadow-lg p-4 border overflow-auto max-h-[70vh]">
       <h2 className="font-bold text-xl mb-2">Cart</h2>
 
       <button

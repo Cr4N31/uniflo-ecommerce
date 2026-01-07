@@ -1,6 +1,6 @@
-import products from "../../data/products";
+import products from "../../../data/products";
 import { useState } from "react";
-import { useCart } from "../Cart/CartContext";
+import { useCart } from "../../Cart/CartContext";
 import ProductCard from "./ProductCard";
 
 function ProductsList() {
@@ -14,7 +14,7 @@ function ProductsList() {
     setCounts((prev) => ({ ...prev, [id]: Math.max((prev[id] || 1) - 1, 1) }));
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 mt-16">
+    <div data-aos="fade-up" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 mt-16">
       {products.map((product) => {
         const quantity = counts[product.id] || 1;
 

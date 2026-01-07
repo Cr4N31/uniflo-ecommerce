@@ -1,16 +1,18 @@
 import { CartProvider } from "./components/Cart/CartContext";
-import Products from "./components/Products/Products";
-import Header from "./components/Header";
+import ProductLayout from "./components/Products/ProductLayout";
 import CartLayout from "./components/Cart/CartLayout";
 import { useCart } from "./components/Cart/CartContext";
+import { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function AppContent() {
   const { isCartOpen } = useCart();
 
   return (
     <>
-      <Header />
-      <Products />
+      <ProductLayout/>
 
       {/* Cart sidebar */}
       {isCartOpen && <CartLayout />}
@@ -19,6 +21,12 @@ function AppContent() {
 }
 
 function App() {
+    useEffect(() => {
+    AOS.init({
+      duration: 1200, // animation duration in ms
+      once: true,     // whether animation should happen only once
+    });
+  }, []);
   return (
     <CartProvider>
       <AppContent />

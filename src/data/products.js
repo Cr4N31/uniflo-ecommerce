@@ -1,35 +1,29 @@
-import MockImage from '../assets/react.svg'
+import Shattaf from '../assets/Product Images/shatafhandle.jpg'
+import FlushingMechanism from '../assets/Product Images/FlushingMechanism.jpg'
+import ToiletSeat from '../assets/Product Images/ToiletSeat.jpg'
 const products = [
     {
         id: 1,
-        title: "Wireless Earphones",
-        price: 500,
-        img: MockImage,
-        category: "Electronics and Gadgets",
+        title: "Shattaf Handle",
+        price: 50,
+        img: Shattaf,
+        category: "Utility",
         inStock: true,
     },
     {
         id: 2,
-        title: "Iphone 17",
-        price: 1500,
-        img: MockImage,
-        category: "Electronics and Gadgets",
+        title: "Flushing Mechanism",
+        price: 100,
+        img: FlushingMechanism,
+        category: "Utiltiy",
         inStock: true,
     },
         {
-        id: 2,
-        title: "Iphone 17",
-        price: 1500,
-        img: MockImage,
-        category: "Electronics and Gadgets",
-        inStock: true,
-    },
-        {
-        id: 2,
-        title: "Iphone 17",
-        price: 1500,
-        img: MockImage,
-        category: "Electronics and Gadgets",
+        id: 3,
+        title: "Toilet Seat",
+        price: 90,
+        img: ToiletSeat,
+        category: "Utility",
         inStock: true,
     },
 ]

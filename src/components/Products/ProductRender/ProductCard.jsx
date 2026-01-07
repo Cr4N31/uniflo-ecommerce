@@ -7,10 +7,10 @@ function ProductCard({ product, quantity, onIncrease, onDecrease, onAddToCart })
         className="w-32 h-32 object-contain mb-4"
       />
 
-      <h2 className="text-teal-500 font-bold text-lg mb-1">
+      <h2 className="text-black font-bold text-lg mb-1">
         {product.title}
       </h2>
-      <h3 className="text-teal-500 font-semibold text-md mb-2">
+      <h3 className="text-black font-semibold text-md mb-2">
         ${product.price}
       </h3>
 
